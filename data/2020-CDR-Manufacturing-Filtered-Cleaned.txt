@@ -1,0 +1,247 @@
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "DOMESTIC PARENT COMPANY NAME",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "DOMESTIC PARENT COMPANY NAME CLEANED",
+    "columnInsertIndex": 6,
+    "description": "Create column DOMESTIC PARENT COMPANY NAME CLEANED at index 6 based on column DOMESTIC PARENT COMPANY NAME using expression grel:value"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DOMESTIC PARENT COMPANY NAME CLEANED",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DOMESTIC PARENT COMPANY NAME CLEANED using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DOMESTIC PARENT COMPANY NAME CLEANED",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DOMESTIC PARENT COMPANY NAME CLEANED using expression value.replace(/\\s+/,' ')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DOMESTIC PARENT COMPANY NAME CLEANED",
+    "expression": "value.toUppercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DOMESTIC PARENT COMPANY NAME CLEANED using expression value.toUppercase()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DOMESTIC PARENT COMPANY NAME CLEANED",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "KOCH INDUSTRIES INC",
+          "KOCH INDUSTRIES, INC.",
+          "KOCH INDUSTRIES, INC"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "KOCH INDUSTRIES INC."
+      }
+    ],
+    "description": "Mass edit cells in column DOMESTIC PARENT COMPANY NAME CLEANED"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DOMESTIC PARENT COMPANY NAME CLEANED",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "UNIVAR SOLUTIONS INC.",
+          "UNIVAR SOLUTIONS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "UNIVAR SOLUTIONS INC."
+      },
+      {
+        "from": [
+          "OCCIDENTAL PETROLEUM CORP",
+          "OCCIDENTAL PETROLEUM CORPORATION"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OCCIDENTAL PETROLEUM CORP."
+      },
+      {
+        "from": [
+          "HEXION HOLDINGS CORPORATION",
+          "HEXION HOLDINGS CORP"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "HEXION HOLDINGS CORP."
+      },
+      {
+        "from": [
+          "FORMOSA PLASTICS CORPORATION, U.S.A.",
+          "FORMOSA PLASTICS CORPORATION"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FORMOSA PLASTICS CORP."
+      },
+      {
+        "from": [
+          "KOCH INDUSTRIES INC.",
+          "KOCH INDUSTRIES"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "KOCH INDUSTRIES INC."
+      }
+    ],
+    "description": "Mass edit cells in column DOMESTIC PARENT COMPANY NAME CLEANED"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DOMESTIC PARENT COMPANY NAME CLEANED",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "BASF CORP",
+          "BASF CORPORATION"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BASF CORP."
+      }
+    ],
+    "description": "Mass edit cells in column DOMESTIC PARENT COMPANY NAME CLEANED"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DOMESTIC PARENT COMPANY NAME CLEANED",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "HUNTSMAN CORPORATION"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "HUNTSMAN INTERNATIONAL LLC"
+      }
+    ],
+    "description": "Mass edit cells in column DOMESTIC PARENT COMPANY NAME CLEANED"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "SITE CITY",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "SITE CITY CLEANED",
+    "columnInsertIndex": 26,
+    "description": "Create column SITE CITY CLEANED at index 26 based on column SITE CITY using expression grel:value"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "SITE CITY CLEANED",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column SITE CITY CLEANED using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "SITE CITY CLEANED",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column SITE CITY CLEANED using expression value.replace(/\\s+/,' ')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "SITE CITY CLEANED",
+    "expression": "value.toUppercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column SITE CITY CLEANED using expression value.toUppercase()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "SITE CITY CLEANED",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "LAPORTE",
+          "LA PORTE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LA PORTE"
+      }
+    ],
+    "description": "Mass edit cells in column SITE CITY CLEANED"
+  }
+]
